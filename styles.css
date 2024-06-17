@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(140deg, #1e90ff, #ff6a00);
+    color: #fff;
+}
+
+.stopwatch {
+    background: rgba(4, 15, 91, 0.6);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#display {
+    font-size: 5em;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startStopBtn {
+    background: #28a745;
+}
+
+#startStopBtn:hover {
+    background: #69db6d;
+}
+
+#resetBtn {
+    background: #dc3545;
+}
+
+#resetBtn:hover {
+    background: #d08a91;
+}
+
+#lapBtn {
+    background: #ffc107;
+    color: #212529;
+}
+
+#lapBtn:hover {
+    background: #bda55d;
+}
+
+#laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#laps li {
+    font-size: 2em;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
